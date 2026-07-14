@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">Cold and hot air density comparison</title>
+  <desc id="desc">Cold air has more slow-moving molecules while hot air has fewer fast-moving molecules at the same pressure.</desc>
+  <rect width="900" height="430" rx="24" fill="#f4f1e9"/>
+  <rect x="40" y="70" width="380" height="300" rx="18" fill="#dce9e1" stroke="#254c3d" stroke-width="3"/>
+  <rect x="480" y="70" width="380" height="300" rx="18" fill="#fff2e9" stroke="#e85d2a" stroke-width="3"/>
+  <g fill="#254c3d">
+    <circle cx="105" cy="135" r="12"/><circle cx="190" cy="125" r="12"/>
+    <circle cx="285" cy="145" r="12"/><circle cx="360" cy="120" r="12"/>
+    <circle cx="130" cy="215" r="12"/><circle cx="225" cy="205" r="12"/>
+    <circle cx="330" cy="225" r="12"/><circle cx="90" cy="300" r="12"/>
+    <circle cx="190" cy="290" r="12"/><circle cx="285" cy="315" r="12"/>
+    <circle cx="370" cy="295" r="12"/>
+  </g>
+  <g fill="#e85d2a">
+    <circle cx="555" cy="140" r="12"/><circle cx="710" cy="120" r="12"/>
+    <circle cx="805" cy="200" r="12"/><circle cx="620" cy="245" r="12"/>
+    <circle cx="755" cy="310" r="12"/><circle cx="535" cy="325" r="12"/>
+  </g>
+  <g stroke="#e85d2a" stroke-width="5" stroke-linecap="round">
+    <path d="M555 140l45-25m-45 25l38 32"/><path d="M710 120l50 18m-50-18l-12 48"/>
+    <path d="M805 200l-40 30m40-30l22-42"/><path d="M620 245l40 35m-40-35l-45 18"/>
+    <path d="M755 310l42-20m-42 20l20 42"/><path d="M535 325l34-38m-34 38l-28-31"/>
+  </g>
+  <g fill="#17211d" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="230" y="42" font-size="25" font-weight="700">COLD AIR</text>
+    <text x="670" y="42" font-size="25" font-weight="700">HOT AIR</text>
+    <text x="230" y="405" font-size="18">More molecules · slower movement</text>
+    <text x="670" y="405" font-size="18">Fewer molecules · faster movement</text>
+  </g>
+</svg>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Private pilot learning notes and an offline English-Chinese aviation vocabulary reviewer."
+    >
+    <title>Pilot Notes</title>
+    <link rel="stylesheet" href="vendor/katex/katex.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#notes" aria-label="Pilot Notes home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>
+          <strong>Pilot Notes</strong>
+          <small>Private pilot learning log</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#notes" data-route="notes">Notes</a>
+        <a href="#vocabulary" data-route="vocabulary">Vocabulary</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="notes-view" class="view" aria-labelledby="notes-title">
+        <div class="hero">
+          <div>
+            <p class="eyebrow">Ground school, organized</p>
+            <h1 id="notes-title">Build understanding,<br>not just hours.</h1>
+            <p class="hero-copy">
+              將飛行知識整理成容易回顧的主題，保留問題、推理與結論。
+            </p>
+          </div>
+          <div class="instrument" aria-hidden="true">
+            <span class="instrument-label">LEARNING ALT</span>
+            <strong id="note-count">0001</strong>
+            <span>NOTES</span>
+          </div>
+        </div>
+
+        <div class="workspace">
+          <aside class="sidebar">
+            <label class="search">
+              <span class="sr-only">Search notes</span>
+              <input id="note-search" type="search" placeholder="Search notes...">
+              <span aria-hidden="true">⌕</span>
+            </label>
+            <div id="note-filters" class="filters" aria-label="Filter notes by category"></div>
+          </aside>
+          <div id="notes-grid" class="notes-grid"></div>
+        </div>
+      </section>
+
+      <section id="note-detail-view" class="view" aria-live="polite">
+        <button id="back-to-notes" class="text-button" type="button">← Back to notes</button>
+        <article id="note-detail" class="note-detail"></article>
+      </section>
+
+      <section id="vocabulary-view" class="view" aria-labelledby="vocabulary-title">
+        <div class="vocab-heading">
+          <div>
+            <p class="eyebrow">Offline review deck</p>
+            <h1 id="vocabulary-title">Aviation English</h1>
+            <p>英中詞彙、字源拆解與航空情境說明。</p>
+          </div>
+          <div class="progress-summary">
+            <span id="mastery-count">0 / 0</span>
+            <small>words mastered</small>
+          </div>
+        </div>
+
+        <div class="study-toolbar">
+          <div class="mode-switcher" role="group" aria-label="Study mode">
+            <button type="button" data-mode="browse">Browse</button>
+            <button type="button" data-mode="flashcards">Flashcards</button>
+            <button type="button" data-mode="quiz">Quiz</button>
+          </div>
+          <label class="search vocabulary-search">
+            <span class="sr-only">Search vocabulary</span>
+            <input id="vocabulary-search" type="search" placeholder="Search vocabulary...">
+            <span aria-hidden="true">⌕</span>
+          </label>
+        </div>
+
+        <div id="browse-mode" class="study-mode">
+          <div id="vocabulary-list" class="vocabulary-list"></div>
+        </div>
+
+        <div id="flashcards-mode" class="study-mode">
+          <div class="study-status">
+            <span id="flashcard-position"></span>
+            <button id="shuffle-cards" class="text-button" type="button">Shuffle deck</button>
+          </div>
+          <button id="flashcard" class="flashcard" type="button" aria-label="Flip flashcard">
+            <span class="flip-hint">Click to reveal</span>
+            <span id="flashcard-front" class="flashcard-face"></span>
+            <span id="flashcard-back" class="flashcard-face"></span>
+          </button>
+          <div class="card-actions">
+            <button id="pronounce-card" class="button secondary" type="button">
+              🔊 Pronounce
+            </button>
+            <button id="review-again" class="button secondary" type="button">Review again</button>
+            <button id="know-word" class="button primary" type="button">I know this</button>
+          </div>
+        </div>
+
+        <div id="quiz-mode" class="study-mode">
+          <div class="study-status">
+            <span id="quiz-progress"></span>
+            <span id="quiz-score"></span>
+          </div>
+          <div class="quiz-card">
+            <p class="eyebrow">Choose the best meaning</p>
+            <h2 id="quiz-word"></h2>
+            <div id="quiz-options" class="quiz-options"></div>
+            <p id="quiz-feedback" class="quiz-feedback" aria-live="polite"></p>
+            <button id="next-question" class="button primary" type="button">Next question</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Pilot Notes</span>
+      <span>Content first · Offline ready</span>
+    </footer>
+
+    <script src="content/notes.js"></script>
+    <script src="content/vocabulary.js"></script>
+    <script src="vendor/katex/katex.min.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
