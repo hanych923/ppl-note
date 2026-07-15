@@ -462,5 +462,61 @@ window.PPL_VOCABULARY = [
     breakdown: "chock = 用來固定物體的楔形塊；-s = 複數字尾",
     explanation: "放在航空器輪胎前後以防止停放中的航空器意外移動；單數是 chock。",
     topic: "Ground Operations"
+  },
+  {
+    term: "antidote",
+    pronunciation: "/ˈæntidoʊt/",
+    translation: "解毒劑；對策；矯正方法",
+    breakdown: "anti- = against「對抗」；-dote 源自希臘文 didonai「給予」",
+    explanation: "在 aeronautical decision-making 中，指用來辨識並抵消 hazardous attitude（危險態度）的自我提醒或替代想法。",
+    topic: "Aeronautical Decision-Making"
+  },
+  {
+    term: "impulsivity",
+    pronunciation: "/ɪmˌpʌlˈsɪvəti/",
+    translation: "衝動；衝動性",
+    breakdown: "impulse = 衝動；-ive = 具有……性質的；-ity = 狀態",
+    explanation: "急著立刻採取行動而未充分思考的 hazardous attitude。對策是：Not so fast. Think first.（不要急，先思考。）",
+    topic: "Aeronautical Decision-Making"
+  },
+  {
+    term: "invulnerability",
+    pronunciation: "/ɪnˌvʌlnərəˈbɪləti/",
+    translation: "不會受傷的錯覺；自認不會出事",
+    breakdown: "in- = not「不」；vulnerable = 容易受傷的；-ity = 狀態",
+    explanation: "認為事故只會發生在別人身上的 hazardous attitude。對策是：It could happen to me.（這也可能發生在我身上。）",
+    topic: "Aeronautical Decision-Making"
+  },
+  {
+    term: "macho",
+    pronunciation: "/ˈmɑːtʃoʊ/",
+    translation: "逞強的；好勝冒險的",
+    breakdown: "源自西班牙文 macho「男性、雄性的」",
+    explanation: "為了證明能力而冒不必要風險的 hazardous attitude，任何性別都可能出現。對策是：Taking chances is foolish.（冒險並不明智。）",
+    topic: "Aeronautical Decision-Making"
+  },
+  {
+    term: "resignation",
+    pronunciation: "/ˌrezɪɡˈneɪʃən/",
+    translation: "聽天由命；放棄努力",
+    breakdown: "resign = 放棄、辭去；-ation = 狀態或過程",
+    explanation: "認為自己無法改變情況、把結果交給命運的 hazardous attitude。對策是：I'm not helpless. I can make a difference.（我並非無能為力。）",
+    topic: "Aeronautical Decision-Making"
+  },
+  {
+    term: "sterile",
+    pronunciation: "/ˈsterəl/",
+    translation: "無干擾的；無菌的",
+    breakdown: "源自拉丁文 sterilis「不生產的、貧瘠的」",
+    explanation: "在 sterile cockpit 中，指關鍵飛行階段避免與安全操作無關的談話和活動，讓機組專注於飛行任務。",
+    topic: "Flight Operations"
+  },
+  {
+    term: "terrain",
+    pronunciation: "/təˈreɪn/",
+    translation: "地形；地勢",
+    breakdown: "源自法文 terrain，最終來自拉丁文 terra「土地、地面」",
+    explanation: "地表的形狀與特徵，包括山脈、丘陵、山谷和平原；飛行規劃需考慮 terrain clearance（地形淨空）。",
+    topic: "Navigation"
   }
 ];
